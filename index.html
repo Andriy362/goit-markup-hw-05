@@ -71,8 +71,10 @@
             
             <div class="container">
                 <h1 class="selection-title">Эффективные решения для вашего бизнеса</h1>
-                <button type="button" class="selection-btn"> Заказать услугу </button>
+                <button data-modal-open type="button" class="selection-btn"> Заказать услугу </button>
             </div>
+
+            
            
         </section>
 
@@ -137,9 +139,37 @@
             <div class="container">
                 <h2 class="headline">Чем мы занимаемся </h2>
                 <ul class="list photo">
-                    <li class="list-photo"><img src="./image/img.jpg" alt="робочий стол" width="370"></li>
-                    <li class="list-photo"><img src="./image/box 2.jpg" alt="техника" width="370"></li>
-                    <li class="list-photo"><img src="./image/box 3.jpg" alt="планшет" width="370"></li>
+                    <li class="list-photo">
+                        <div class="div-content-one">
+                            <img src="./image/img.jpg" alt="робочий стол" width="370">
+                            <div class="div-style">
+                                <p class="p-text">Десктопные приложения</p>
+                            </div>
+
+                        </div>
+                       
+            
+                    </li>
+
+
+
+                    <li class="list-photo">
+                        <div class="div-content-one">
+                            <img src="./image/box 2.jpg" alt="техника" width="370">
+                            <div class="div-style">
+                                <p class="p-text">Мобильные приложения</p>
+                            </div>
+                        
+                    
+                    </li>
+
+                    <li class="list-photo">
+                        <div class="div-content-one">
+                            <img src="./image/box 3.jpg" alt="планшет" width="370">
+                            <div class="div-style">
+                                <p class="p-text">Дизайнерские решения</p>
+                            </div>
+                        </li>
                 </ul>
             </div>
             
@@ -154,9 +184,7 @@
                    
 
                     <li class="subtitle-icon"> <img src="./image/img1.jpg" alt="Игорь Демьяненко" width="270">
-                        
                         <div class="div-text">
-
                             <h3 class="subtitle"> Игорь Демьяненко</h3>
                             <p lang="en" class="subtitle-text">Product Designer</p>
                             <ul class="ul-subtitle-icon  list">
@@ -195,7 +223,7 @@
                             
                             </ul>
                         </div>
-                        
+                       
                     </li>
                 
                 
@@ -328,9 +356,10 @@
                             </li>
                         
                         </ul>
-                        </div>
+                       </div>
                         
                     </li>
+
                 </ul>
             </div>
             
@@ -429,10 +458,6 @@
                 </address>
             
             </div>
-
-
-
-
             
             <div class="footer-div ">
             
@@ -481,10 +506,25 @@
             
 
         </div>
+
         
        
     </footer>
-   
+    <div class="overlay is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="btn-modal" data-modal-close >
+                <svg class="clas-svg " width="11" height="11">
+                    <use href="./image/symbol-defs.svg#icon-Vector" >
+                    
+                    </use>
+                </svg>
+
+            </button>
+           
+        </div>
+    
+    </div>
+   <script src="./modal.js"></script>
 </body>
 
 </html>
